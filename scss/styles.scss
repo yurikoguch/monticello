@@ -1,0 +1,978 @@
+@import "slick.scss";
+@import "slick-theme";
+
+body {
+  font-family: 'gotham_mediumregular', sans-serif;
+  width: 100%;
+
+
+  header {
+
+    .ba-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        background: url("../images/Logo.png") center center no-repeat;
+        background-size: auto;
+        width: 30%;
+        height: 54px;
+      }
+
+      .nav {
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            font-family: 'GothamBook', sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 22px;
+
+          }
+            a:hover  img{
+              background: white;
+              border-radius: 100%;
+            }
+
+            img:hover {
+              background: white;
+              border-radius: 100%;
+            }
+
+            li {
+              list-style: none;
+              display: inline-block;
+            }
+          }
+
+        }
+      }
+
+      .socialIcons {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          width: 35px;
+          border: 1px solid #a189fb;
+          border-radius: 100%;
+          color: white;
+          padding: 10px;
+        }
+      }
+    }
+
+  }
+
+  .hero {
+    background: url("../images/BgHero.jpg") center center no-repeat;
+    background-size: cover;
+    margin-top: -54px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .title {
+      margin-top: 50px;
+      width: 80%;
+      height: 80%;
+      text-transform: uppercase;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .slick-dots {
+        width: 25px;
+        bottom: auto;
+        top: 50%;
+        right: -55px;
+        transform: translateY(-50%);
+      }
+
+      .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 10px;
+        line-height: 20px;
+        border: 1px solid rgba(255, 255, 255, 255);
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        content: ''; /* <-- Вот этот символ */
+        text-align: center;
+        color: white;
+      }
+
+      .slick-dots li.slick-active button:before {
+        background: white;
+        opacity: 1;
+      }
+
+      .heroSlide1 {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+
+        h1 {
+          font-family: 'gothambold1', sans-serif;
+          font-size: 80px;
+          line-height: 22px;
+          letter-spacing: 0.05em;
+        }
+
+        h4 {
+          font-family: 'GothamBook', sans-serif;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.3em;
+          font-weight: normal;
+        }
+      }
+
+      .heroSlide2 {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+        h1 {
+          font-family: 'gothambold1', sans-serif;
+          font-size: 80px;
+          line-height: 22px;
+          letter-spacing: 0.05em;
+        }
+
+        h4 {
+          font-family: 'GothamBook', sans-serif;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.3em;
+          font-weight: normal;
+        }
+      }
+
+      .heroSlide3 {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+
+        h1 {
+          font-family: 'gothambold1', sans-serif;
+          font-size: 80px;
+          line-height: 22px;
+          letter-spacing: 0.05em;
+        }
+
+        h4 {
+          font-family: 'GothamBook', sans-serif;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.3em;
+          font-weight: normal;
+        }
+      }
+
+
+      .eclipse {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-right: 50px;
+
+        a {
+          img:hover {
+            background: white;
+            border-radius: 100%;
+          }
+        }
+
+      }
+    }
+
+    .arrow {
+      background: url("../images/ArrowHero.png");
+      width: 40px;
+      height: 40px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .projectOne {
+
+    width: 100%;
+    font-family: 'gothambold1', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 140px;
+
+    .galleryLine {
+      margin: 50px auto;
+      width: 100px;
+      border: 1px solid #2c4058;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'gotham_mediumregular', sans-serif;
+      font-weight: bold;
+      color: #2c4058;
+      font-size: 44px;
+      line-height: 22px;
+      margin-bottom: 100px;
+    }
+
+    .projectSample {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .project1Text {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h4 {
+          font-family: 'GothamBook', sans-serif;
+          text-transform: uppercase;
+          font-weight: lighter;
+          color: #2c4058;
+          font-size: 22px;
+          line-height: 22px;
+
+        }
+
+        h3 {
+          margin-top: 0;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #2c4058;
+          font-size: 44px;
+          line-height: 22px;
+        }
+
+        p {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #2c4058;
+        }
+
+        #block_id {
+          display: none;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #2c4058;
+        }
+
+        a {
+          font-family: 'GothamBook', sans-serif;
+          width: 190px;
+          height: 50px;
+          font-size: 14px;
+          line-height: 22px;
+          color: #2c4058;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 1px solid #000000;
+          -webkit-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+          margin-bottom: 60px;
+        }
+
+        span {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          color: #2c4058;
+          font-style: italic;
+        }
+      }
+
+      .image {
+        background: url("../images/projectSempleBG.jpg");
+        width: 50%;
+        height: 540px;
+      }
+    }
+  }
+
+  .projectTwo {
+    width: 100%;
+    font-family: 'gothambold1', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 140px;
+
+    .projectTwoSample {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .project2Text {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 215px;
+
+        h4 {
+          font-family: 'GothamBook', sans-serif;
+          text-transform: uppercase;
+          font-weight: lighter;
+          color: #2c4058;
+          font-size: 22px;
+          line-height: 22px;
+
+        }
+
+        h3 {
+          margin-top: 0;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #2c4058;
+          font-size: 44px;
+          line-height: 22px;
+        }
+
+        p {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #2c4058;
+        }
+
+        #hidden {
+          display: none;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #2c4058;
+        }
+
+        a {
+          font-family: 'GothamBook', sans-serif;
+          width: 190px;
+          height: 50px;
+          font-size: 14px;
+          line-height: 22px;
+          color: #2c4058;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 1px solid #000000;
+          -webkit-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+          margin-bottom: 60px;
+        }
+
+        span {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          color: #2c4058;
+          font-style: italic;
+        }
+      }
+
+      .imageProdTwo {
+        background: url("../images/project2BG.jpg");
+        width: 50%;
+        height: 540px;
+      }
+    }
+  }
+
+  .news {
+    background: url("../images/newsBg.jpg") center center no-repeat;
+    width: 100%;
+    height: 1035px;
+
+    .newsTitle {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 30%;
+
+      .galleryLine {
+        width: 100px;
+        border: 1px solid #ffffff;
+        margin: 0 auto;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 44px;
+        line-height: 22px;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+
+    .responsive {
+      width: 80%;
+      margin: 0 auto;
+
+      .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 10px;
+        line-height: 20px;
+        border: 1px solid rgba(255, 255, 255, 255);
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        content: ''; /* <-- Вот этот символ */
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+      }
+
+      .slick-dots li.slick-active button:before {
+        background: white;
+        opacity: 1;
+      }
+
+      .prevButton {
+        background: url("../images/leftArrow.png") center center no-repeat;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        left: -100px;
+        top: calc(50% - 30px);
+        cursor: pointer;
+      }
+
+      .nextButton {
+        background: url("../images/rightArrow.png") center center no-repeat;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: -100px;
+        top: calc(50% - 30px);
+        cursor: pointer;
+      }
+
+      .slide1 {
+        background: url("../images/slide1.png") center center no-repeat;
+        width: 95%;
+        height: 514px;
+        margin: 0 10px;
+      }
+
+      .slide2 {
+        background: url("../images/slide2.png") center center no-repeat;
+        width: 95%;
+        height: 514px;
+        margin: 0 10px;
+      }
+
+      .slide3 {
+        background: url("../images/slide3.png") center center no-repeat;
+        width: 95%;
+        height: 514px;
+        margin: 0 10px;
+      }
+
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      font-family: 'GothamBook', sans-serif;
+      width: 190px;
+      height: 50px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #2c4058;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #000000;
+      -webkit-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+      margin-bottom: 60px;
+
+    }
+
+    .galleryTitle {
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      .galleryLine {
+        width: 100px;
+        border: 1px solid #2c4058;
+      }
+
+      h2 {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'gotham_mediumregular', sans-serif;
+        font-weight: bold;
+        color: #2c4058;
+        font-size: 44px;
+        line-height: 22px;
+        margin-bottom: 100px;
+      }
+    }
+
+    .grid {
+      margin: 0 auto;
+      width: 90%;
+      height: 500px;
+
+      .grid-item {
+        margin: 5px;
+        float: left;
+        width: 285px;
+        height: 214px;
+
+      }
+
+      .grid-item:nth-of-type(2) {
+        background: url("../images/galleryTwo.png");
+      }
+
+      .grid-item:nth-of-type(3) {
+        background: url("../images/galerryTree.png");
+      }
+
+      .grid-item:nth-of-type(4) {
+        background: url("../images/galleryFourth.png");
+      }
+
+      .grid-item:nth-of-type(5) {
+        background: url("../images/galleryFifth.png");
+      }
+
+      .grid-item--width2 {
+        float: left;
+        width: 580px;
+        height: 438px;
+        background: url("../images/360gr.png")
+      }
+    }
+  }
+
+  .contact {
+    position: relative;
+
+    iframe {
+      width: 100%;
+      height: 100vh;
+    }
+
+    form {
+      position: absolute;
+      background: url("../images/formBG.png") center center no-repeat;
+      width: 770px;
+      height: 450px;
+      left: calc(50% - 385px);
+      margin-top: -300px;
+      z-index: 1;
+
+
+      .formTitle {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .galleryLine {
+          width: 100px;
+          border: 1px solid #2c4058;
+        }
+
+        h3 {
+          width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'gotham_mediumregular', sans-serif;
+          font-weight: bold;
+          color: #2c4058;
+          font-size: 44px;
+          line-height: 22px;
+          margin-bottom: 100px;
+        }
+
+      }
+
+      .row {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        .contactInfo {
+          height: 100%;
+          width: 50%;
+          margin-left: 55px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-family: 'GothamBook', sans-serif;
+          font-size: 18px;
+          line-height: 34px;
+
+          i {
+            color: #7e5aff;
+          }
+        }
+
+        .inputs {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          input {
+            width: 70%;
+            height: 50px;
+            font-family: 'GothamBook', sans-serif;
+            font-size: 18px;
+            line-height: 22px;
+            color: #a5aab0;
+            border: none;
+            border-bottom: 1px solid #a5aab0;
+            margin-bottom: 30px;
+          }
+
+          input:focus {
+            height: 50px;
+            font-family: 'GothamBook', sans-serif;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+            border: none;
+            border-bottom: 1px solid #000000;
+          }
+
+          button {
+            width: 140px;
+            background: none;
+            height: 50px;
+            font-family: 'GothamBook', sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+            color: #2c4058;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid #000000;
+            -webkit-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.35);
+            margin-bottom: 60px;
+          }
+
+        }
+      }
+    }
+  }
+
+  footer {
+    background: url("../images/footerBg.jpg") center center no-repeat;
+    width: 100%;
+
+
+    .ba-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 200px;
+    }
+
+    .footerLogo {
+      background: url("../images/footerLogo.png") center center no-repeat;
+      width: 410px;
+      height: 112px;
+    }
+
+    .footericons {
+      width: 25%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        border: 1px solid #a189fb;
+        border-radius: 100%;
+        color: white;
+        padding: 14px;
+      }
+
+    }
+  }
+
+
+
+.ba-container {
+  width: 80%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header {
+    width: 100%;
+    background: #7176f9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo {
+      display: none;
+    }
+
+    .nav {
+      width: 70%;
+      display: flex;
+      align-items: center;
+
+      li {
+        display: inline-block;
+        margin-right: 30px;
+      }
+    }
+  }
+  .hero {
+    width: 100%;
+    height: 100vh;
+
+    .title {
+      height: 100%;
+
+      #slick-slide10 > h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    #slick-slide11 > h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+  #slick-slide12 > h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+
+  section.projectOne > div.projectSample > div.image{
+    background: url("../images/projectSempleBG.jpg")left center no-repeat;
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+  }
+  section.projectOne > div.projectSample > div.project1Text>h3{
+    line-height: normal;
+  }
+  section.projectTwo > div.projectTwoSample > div.project2Text{
+    margin-left: 10px;
+  }
+  section.projectTwo > div.projectTwoSample > div.project2Text>h3{
+    line-height: normal;
+  }
+  body > main > section.gallery > div.galleryTitle{
+    padding-top: 30px;
+  }
+  body > main > section.gallery > div.galleryTitle > h2{
+    margin-bottom: 20px;
+  }
+  body > main > section.gallery > div.grid{
+    margin-left: 85px;
+    height: 100vh;
+    float: none;
+  }
+  body > main > section.gallery > a{
+    background: white;
+  }
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+
+  header {
+    display: none;
+  }
+  .hero {
+    width: 100%;
+    height: 100vh;
+
+    .title {
+      height: 100%;
+
+      #slick-slide10 > h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    #slick-slide11 > h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+  #slick-slide12 > h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+
+
+  body > main > section.projectOne > h2{
+    line-height: normal;
+  }
+  section.projectOne > div.projectSample > div.image{
+    display: none;
+  }
+  section.projectOne > div.projectSample > div.project1Text{
+    background: url("../images/projectSempleBG.jpg")center center no-repeat;
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+  }
+  body > main > section.projectOne{
+    margin-bottom: 20px;
+  }
+  body > main > section.projectOne > div.projectSample > div.project1Text > a{
+    background: white;
+  }
+  section.projectOne > div.projectSample > div.project1Text>h3{
+    line-height: normal;
+
+  }
+  section.projectTwo > div.projectTwoSample > div.project2Text{
+    margin-left: 1px;
+    background: url("../images/project2BG.jpg")center center no-repeat;
+    width: 100%;
+    height: 540px;
+  }
+  #projects > div > div.project2Text > a{
+    background: white;
+  }
+  section.projectTwo > div.projectTwoSample > div.project2Text>h3{
+    line-height: normal;
+  }
+  #projects > div > div.imageProdTwo{
+    display: none;
+  }
+  body > main > section.gallery{
+    width: 100vw;
+  }
+
+}
+
+
+
+
+
+
+
